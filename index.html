@@ -260,7 +260,7 @@
 
 <span class="nx">request</span><span class="p">({</span>
   <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s1">'company-key'</span><span class="p">:</span> <span class="s1">'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb19pZCI6ImNvc21vcHJvZl9hc2lhIn0.mrRfU8ZX2uf1l8tJKL4ZS1-zC7Mk96xuf8DxyKnLaEo'</span><span class="p">,</span>
+    <span class="s1">'company-key'</span><span class="p">:</span> <span class="s1">'U4mcvsFW5xYEuCjw0Er8HWFI4sPV3rE5bt9SRz3EY82nsjTwyN67wz6CcH1QQ2FXHctBO121Om6mcZ1ubJSkXxvpKsVX0BFtbd'</span><span class="p">,</span>
   <span class="p">}</span>
 <span class="p">})</span>
 </code></pre>
@@ -296,7 +296,7 @@ Remember not to show any of you credentials on publicly accessible areas such cl
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12_8nbTC5ZmViGHVY-I-ZEobwUGgLqYxmatS9l9DZLt6RP5c3nG1Psp5-XHrBfyjmQaqgGP-OJahx7SD_5J4BdgbFqp9I04TvwSfFvU6hKMYFn7oMEu9emqSaKomn8eXn4SnA5mgJhb55DfwrOdDNOaAKDTDE"</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"U4mcvsFW5xYEuCjw0Er8HWFI4sPV3rE5bt9SRz3EY82nsjTwyN67wz6CcH1QQ2FXHctBO121Om6mcZ1ubJSkXxvpKsVX0BFtbd"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre><h3 id='http-request'>HTTP Request</h3>
 <p>You can get the access token of Weixin through this endpoint.</p>
@@ -327,13 +327,13 @@ Remember not to show any of you credentials on publicly accessible areas such cl
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d3yp2Ud9Gzwj6dnSWFhcRYzvhxyolsSNY7HlR3vteju9lMvdzmUqX7l7g7f5azu9eacLwRFnMufFReC5ykAcIA"</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"U4mcvsFW5xYEuCjw0Er8HWFI4sPV3rE5bt9SRz3EY82nsjTwyN67wz6CcH1QQ2FXHctBO121Om6mcZ1ubJSkXxvpKsVX0BFtbd"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre><h3 id='http-request-2'>HTTP Request</h3>
 <p>You can get the jsticket of Weixin through this endpoint.</p>
 
 <p><code>[GET] /api/jsticket</code></p>
-<h2 id='oauth-redirect'>Oauth Redirect</h2><pre class="highlight javascript tab-javascript"><code><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="s2">"http://wemine.cn/wx-bridge/oauth_bridge.php?quick_auth=cosmoprof_asia_quick_auth&amp;redirect=[Redirect Path]"</span><span class="p">;</span>
+<h2 id='oauth-redirect'>Oauth Redirect</h2><pre class="highlight javascript tab-javascript"><code><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="s2">"http://wemine.cn/wx-bridge/oauth_bridge.php?quick_auth=[Quick Auth Param]&amp;redirect=[Redirect Path]"</span><span class="p">;</span>
 </code></pre><h3 id='http-request-3'>HTTP Request</h3>
 <p>You can get the open id through redirecting this url, and the open id can retrieve on GET variable, wx_openid</p>
 
