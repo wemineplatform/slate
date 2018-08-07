@@ -236,6 +236,9 @@
                   <li>
                     <a href="#jsticket" class="toc-h2 toc-link" data-title="JSTicket">JSTicket</a>
                   </li>
+                  <li>
+                    <a href="#oauth-redirect" class="toc-h2 toc-link" data-title="Oauth Redirect">Oauth Redirect</a>
+                  </li>
               </ul>
           </li>
       </ul>
@@ -330,6 +333,9 @@ Remember not to show any of you credentials on publicly accessible areas such cl
 <p>You can get the jsticket of Weixin through this endpoint.</p>
 
 <p><code>[GET] /api/jsticket</code></p>
+<h2 id='oauth-redirect'>Oauth Redirect</h2><pre class="highlight javascript tab-javascript"><code><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="s2">"http://wemine.cn/wx-bridge/oauth_bridge.php?quick_auth=cosmoprof_asia_quick_auth&amp;redirect=[Redirect Path]"</span><span class="p">;</span>
+</code></pre><h3 id='http-request-3'>HTTP Request</h3>
+<p>You can get the open id through redirecting this url, and the open id can retrieve on GET variable, wx_openid</p>
 
       </div>
       <div class="dark-box">
